@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1380px;
+    margin: auto;
+    border: 1px solid blue;
+}
+
+header {
+    background-color: white;
+}
+
+header .container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.logo img {
+    width: 200px;
+    height: 56px;
+}
+
+nav {
+    margin-left: 120px;
+}
+
+.nav-flex,
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 40px;
+    font: 400 19px 'Roboto', sans-serif;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    color: #274C5B;
+}
+
+nav ul li:last-child {
+    margin-left: 60px;
+}
+
+ul li:active {
+    color: #7EB693;
+}
+
+ul li:first-child {
+    margin-left: 0;
+}
+
+.trolley-button {
+    padding: 20px 37px 20px 85px;
+    background: url(./images/circle-with-trolley.svg);
+    background-position: 7%;
+    background-repeat: no-repeat;
+    border: 1px solid #D4D4D4;
+    border-radius: 33px;
+    font: 400 17px 'Roboto', sans-serif;
+    line-height: 29px;
+    text-decoration: none;
+    color: #274C5B;
+}
+
+.subscription .subscribe-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscription .container {
+    padding: 111px 0 50px;
+}
+
+.subscribe-box {
+    background: url(./images/subscription-background.jpg) no-repeat;
+    border-radius: 30px;
+    padding: 100px 80px 100px 70px;
+    /*Почему с одной стороны угод не скруглён?*/
+}
+
+.subscription .text h2 {
+    font: 700 50px 'Roboto', sans-serif;
+    line-height: 60px;
+    letter-spacing: 0.36px;
+    color: white;
+    max-width: 23.5%;
+    /*Анна, почему надпись плохо кладётся. в проценты перевела и не смогла уже её корректно собратьь на 2 строчки*/
+}
+
+ .enter-field input {
+    padding: 26px 100px 26px 30px;
+    border: 1px solid white;
+    border-radius: 16px;
+    cursor: auto;
+    background: white;
+    color: #525C60;
+    width: 350px;
+    height: 82px;
+}
+
+input::placeholder {
+    font: 400 18px 'Open Sans', sans-serif;
+    line-height: 29px;
+    opacity: 1;
+    color: #525C60;
+    letter-spacing: 0.36px;
+}
+
+input:focus {
+    border: none;
+    outline: auto;
+}
+
+.subscribe-button {
+    display: inline-block;
+    background: url(./images/circle+arrow.svg) no-repeat 95%;
+    background-color: #274C5B;
+    font: 700 18px 'Open Sans', sans-serif;
+    border: 1px solid #274C5B;
+    border-radius: 16px;
+    line-height: 29px;
+    padding: 26px 71px 26px 36px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+}
+.enter-field:focus {
+    border: 2px solid black;
+}
